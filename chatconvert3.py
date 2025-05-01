@@ -66,7 +66,7 @@ for eml_path in sorted(INPUT_DIR.glob("*.eml")):
         base_filename = clean_filename(title)
     else:
         untitled_counters[date_str] += 1
-        base_filename = f"EmailSelf {date_str} {untitled_counters[date_str]}"
+        base_filename = f"Email {date_str} {untitled_counters[date_str]}"
 
     filename = base_filename + ".md"
     out_path = OUTPUT_DIR / filename
